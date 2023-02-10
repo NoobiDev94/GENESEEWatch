@@ -295,7 +295,8 @@ function searchyt() {
 
         listmusic()
         API_KEY = Api;
-        // https://www.googleapis.com/youtube/v3/videos?part=id%2C+snippet&id=4Y4YSpF6d6w&key={YOUR_API_KEY} For direction video
+        //GET https://www.googleapis.com/youtube/v3/videos?part=statistics&id=Q5mHPo2yDG8&key={YOUR_API_KEY} For direction video views - object .statistics.viewCount
+        // https://www.googleapis.com/youtube/v3/videos?part=id%2C+snippet&id=4Y4YSpF6d6w&key={YOUR_API_KEY} For direction video ratings
         var url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=${sarchvalue}&maxResults=${resultadomaximo}&type=video`;
 
         $.ajax({
