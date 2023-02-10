@@ -295,7 +295,7 @@ function searchyt() {
 
         listmusic()
         API_KEY = Api;
-
+        // https://www.googleapis.com/youtube/v3/videos?part=id%2C+snippet&id=4Y4YSpF6d6w&key={YOUR_API_KEY} For direction video
         var url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=${sarchvalue}&maxResults=${resultadomaximo}&type=video`;
 
         $.ajax({
